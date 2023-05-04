@@ -165,7 +165,7 @@
             // Cancelar
             // 
             this.Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelar.Location = new System.Drawing.Point(428, 156);
+            this.Cancelar.Location = new System.Drawing.Point(413, 156);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(97, 24);
             this.Cancelar.TabIndex = 7;
