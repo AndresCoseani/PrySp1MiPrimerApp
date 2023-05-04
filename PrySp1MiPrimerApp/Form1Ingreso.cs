@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PrySp1MiPrimerApp
 {
-    public partial class Form1 : Form
+    public partial class Form1Ingreso : Form
     {
         //declaracion de variables
         decimal varAlquiler=0;
@@ -19,7 +19,7 @@ namespace PrySp1MiPrimerApp
         decimal varComida = 0;
         decimal varMonto = 0;
 
-        public Form1()
+        public Form1Ingreso()
         {
             InitializeComponent();
         }
@@ -62,7 +62,7 @@ namespace PrySp1MiPrimerApp
             txtMonto.Text = varMonto.ToString();
 
             //concatenar-Unir texto
-            label4.Text = "Alquiler \n" + varAlquiler.ToString() + "Deposito \n" + varDeposito.ToString() + "Comida \n" + varComida.ToString() + "Impuesto \n" + varImpuesto.ToString() + "Monto \n" + varMonto.ToString();
+            Total.Text = "\n Deposito" + varDeposito.ToString() + "\n Alquiler" + varAlquiler.ToString() + "\n Impuesto" + varImpuesto.ToString() + "\n Comida" + varComida.ToString() + "\n Monto" + varMonto.ToString();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -71,6 +71,16 @@ namespace PrySp1MiPrimerApp
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Total_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

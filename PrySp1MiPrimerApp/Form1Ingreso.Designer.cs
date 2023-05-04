@@ -1,6 +1,6 @@
 ﻿namespace PrySp1MiPrimerApp
 {
-    partial class Form1
+    partial class Form1Ingreso
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -43,7 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cmdCalcular = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Total = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -182,7 +182,7 @@
             // 
             // cmdCalcular
             // 
-            this.cmdCalcular.Location = new System.Drawing.Point(357, 545);
+            this.cmdCalcular.Location = new System.Drawing.Point(358, 585);
             this.cmdCalcular.Name = "cmdCalcular";
             this.cmdCalcular.Size = new System.Drawing.Size(86, 39);
             this.cmdCalcular.TabIndex = 4;
@@ -192,34 +192,37 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(241, 548);
+            this.button2.Location = new System.Drawing.Point(239, 587);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 35);
             this.button2.TabIndex = 5;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
+            // Total
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 558);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
+            this.Total.AutoSize = true;
+            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total.Location = new System.Drawing.Point(96, 543);
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(56, 25);
+            this.Total.TabIndex = 6;
+            this.Total.Text = "Total";
+            this.Total.Click += new System.EventHandler(this.Total_Click);
             // 
-            // Form1
+            // Form1Ingreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 607);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(476, 648);
+            this.Controls.Add(this.Total);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cmdCalcular);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "Form1Ingreso";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -250,7 +253,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button cmdCalcular;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Total;
     }
 }
 
