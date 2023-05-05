@@ -28,81 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Lugar = new System.Windows.Forms.Label();
-            this.Alimento = new System.Windows.Forms.Label();
-            this.Cantidad = new System.Windows.Forms.Label();
-            this.Guardar = new System.Windows.Forms.Button();
+            this.lblControlDeAlimentos = new System.Windows.Forms.Label();
+            this.lblLugar = new System.Windows.Forms.Label();
+            this.lblProducto = new System.Windows.Forms.Label();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.cmdGuardar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.Cancelar = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Cantidad2 = new System.Windows.Forms.Label();
-            this.Alimento2 = new System.Windows.Forms.Label();
-            this.Lugar2 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.mrcGuardar = new System.Windows.Forms.GroupBox();
+            this.nudCantidad = new System.Windows.Forms.NumericUpDown();
+            this.cmdCancelar = new System.Windows.Forms.Button();
+            this.cboProductos = new System.Windows.Forms.ComboBox();
+            this.cboLugar = new System.Windows.Forms.ComboBox();
+            this.cmdCerrar = new System.Windows.Forms.Button();
+            this.dtpFechaDeVencimiento = new System.Windows.Forms.DateTimePicker();
+            this.chkVencimiento = new System.Windows.Forms.CheckBox();
+            this.mrcmarco2 = new System.Windows.Forms.GroupBox();
+            this.lstProductosIngresados = new System.Windows.Forms.ListBox();
+            this.mrcGuardar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).BeginInit();
+            this.mrcmarco2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblControlDeAlimentos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Control de alimentos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblControlDeAlimentos.AutoSize = true;
+            this.lblControlDeAlimentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblControlDeAlimentos.Location = new System.Drawing.Point(3, 9);
+            this.lblControlDeAlimentos.Name = "lblControlDeAlimentos";
+            this.lblControlDeAlimentos.Size = new System.Drawing.Size(262, 31);
+            this.lblControlDeAlimentos.TabIndex = 0;
+            this.lblControlDeAlimentos.Text = "Control de alimentos";
+            this.lblControlDeAlimentos.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Lugar
+            // lblLugar
             // 
-            this.Lugar.AutoSize = true;
-            this.Lugar.Location = new System.Drawing.Point(29, 61);
-            this.Lugar.Name = "Lugar";
-            this.Lugar.Size = new System.Drawing.Size(74, 29);
-            this.Lugar.TabIndex = 0;
-            this.Lugar.Text = "Lugar";
-            this.Lugar.Click += new System.EventHandler(this.label2_Click);
+            this.lblLugar.AutoSize = true;
+            this.lblLugar.Location = new System.Drawing.Point(29, 61);
+            this.lblLugar.Name = "lblLugar";
+            this.lblLugar.Size = new System.Drawing.Size(74, 29);
+            this.lblLugar.TabIndex = 0;
+            this.lblLugar.Text = "Lugar";
+            this.lblLugar.Click += new System.EventHandler(this.label2_Click);
             // 
-            // Alimento
+            // lblProducto
             // 
-            this.Alimento.AutoSize = true;
-            this.Alimento.Location = new System.Drawing.Point(226, 61);
-            this.Alimento.Name = "Alimento";
-            this.Alimento.Size = new System.Drawing.Size(107, 29);
-            this.Alimento.TabIndex = 1;
-            this.Alimento.Text = "Alimento";
-            this.Alimento.Click += new System.EventHandler(this.label3_Click);
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Location = new System.Drawing.Point(226, 61);
+            this.lblProducto.Name = "lblProducto";
+            this.lblProducto.Size = new System.Drawing.Size(122, 29);
+            this.lblProducto.TabIndex = 1;
+            this.lblProducto.Text = "Productos";
+            this.lblProducto.Click += new System.EventHandler(this.label3_Click);
             // 
-            // Cantidad
+            // lblCantidad
             // 
-            this.Cantidad.AutoSize = true;
-            this.Cantidad.Location = new System.Drawing.Point(426, 61);
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.Size = new System.Drawing.Size(109, 29);
-            this.Cantidad.TabIndex = 2;
-            this.Cantidad.Text = "Cantidad";
-            this.Cantidad.Click += new System.EventHandler(this.label4_Click);
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(426, 61);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(109, 29);
+            this.lblCantidad.TabIndex = 2;
+            this.lblCantidad.Text = "Cantidad";
+            this.lblCantidad.Click += new System.EventHandler(this.label4_Click);
             // 
-            // Guardar
+            // cmdGuardar
             // 
-            this.Guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Guardar.Location = new System.Drawing.Point(531, 156);
-            this.Guardar.Name = "Guardar";
-            this.Guardar.Size = new System.Drawing.Size(97, 24);
-            this.Guardar.TabIndex = 3;
-            this.Guardar.Text = "Guardar";
-            this.Guardar.UseVisualStyleBackColor = true;
-            this.Guardar.Click += new System.EventHandler(this.button1_Click);
+            this.cmdGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdGuardar.Location = new System.Drawing.Point(531, 176);
+            this.cmdGuardar.Name = "cmdGuardar";
+            this.cmdGuardar.Size = new System.Drawing.Size(97, 24);
+            this.cmdGuardar.TabIndex = 3;
+            this.cmdGuardar.Text = "Guardar";
+            this.cmdGuardar.UseVisualStyleBackColor = true;
+            this.cmdGuardar.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -115,168 +112,145 @@
             this.label5.Text = "Control de alimentos";
             this.label5.Click += new System.EventHandler(this.label1_Click);
             // 
-            // groupBox1
+            // mrcGuardar
             // 
-            this.groupBox1.Controls.Add(this.Cancelar);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.Guardar);
-            this.groupBox1.Controls.Add(this.Cantidad);
-            this.groupBox1.Controls.Add(this.Alimento);
-            this.groupBox1.Controls.Add(this.Lugar);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(22, 53);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(659, 186);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Almacenar";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.mrcGuardar.Controls.Add(this.nudCantidad);
+            this.mrcGuardar.Controls.Add(this.cmdCancelar);
+            this.mrcGuardar.Controls.Add(this.cboProductos);
+            this.mrcGuardar.Controls.Add(this.cboLugar);
+            this.mrcGuardar.Controls.Add(this.label5);
+            this.mrcGuardar.Controls.Add(this.cmdGuardar);
+            this.mrcGuardar.Controls.Add(this.lblCantidad);
+            this.mrcGuardar.Controls.Add(this.lblProducto);
+            this.mrcGuardar.Controls.Add(this.lblLugar);
+            this.mrcGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcGuardar.Location = new System.Drawing.Point(22, 53);
+            this.mrcGuardar.Name = "mrcGuardar";
+            this.mrcGuardar.Size = new System.Drawing.Size(659, 217);
+            this.mrcGuardar.TabIndex = 1;
+            this.mrcGuardar.TabStop = false;
+            this.mrcGuardar.Text = "Guardar";
+            this.mrcGuardar.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // comboBox1
+            // nudCantidad
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(34, 93);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(165, 37);
-            this.comboBox1.TabIndex = 4;
+            this.nudCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudCantidad.Location = new System.Drawing.Point(431, 93);
+            this.nudCantidad.Name = "nudCantidad";
+            this.nudCantidad.Size = new System.Drawing.Size(120, 30);
+            this.nudCantidad.TabIndex = 8;
             // 
-            // comboBox2
+            // cmdCancelar
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(231, 93);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(165, 37);
-            this.comboBox2.TabIndex = 5;
+            this.cmdCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCancelar.Location = new System.Drawing.Point(413, 176);
+            this.cmdCancelar.Name = "cmdCancelar";
+            this.cmdCancelar.Size = new System.Drawing.Size(97, 24);
+            this.cmdCancelar.TabIndex = 7;
+            this.cmdCancelar.Text = "Cancelar";
+            this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
-            // comboBox3
+            // cboProductos
             // 
-            this.comboBox3.DropDownWidth = 165;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.ItemHeight = 29;
-            this.comboBox3.Location = new System.Drawing.Point(431, 93);
-            this.comboBox3.MaxDropDownItems = 20;
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(165, 37);
-            this.comboBox3.TabIndex = 6;
+            this.cboProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboProductos.FormattingEnabled = true;
+            this.cboProductos.Items.AddRange(new object[] {
+            "Galletas",
+            "Carne",
+            "Pastas",
+            "Huevos",
+            "Detergente"});
+            this.cboProductos.Location = new System.Drawing.Point(231, 93);
+            this.cboProductos.Name = "cboProductos";
+            this.cboProductos.Size = new System.Drawing.Size(165, 28);
+            this.cboProductos.TabIndex = 5;
             // 
-            // Cancelar
+            // cboLugar
             // 
-            this.Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelar.Location = new System.Drawing.Point(413, 156);
-            this.Cancelar.Name = "Cancelar";
-            this.Cancelar.Size = new System.Drawing.Size(97, 24);
-            this.Cancelar.TabIndex = 7;
-            this.Cancelar.Text = "Cancelar";
-            this.Cancelar.UseVisualStyleBackColor = true;
+            this.cboLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLugar.FormattingEnabled = true;
+            this.cboLugar.Items.AddRange(new object[] {
+            "Heladera",
+            "Freezer",
+            "Alacena"});
+            this.cboLugar.Location = new System.Drawing.Point(34, 93);
+            this.cboLugar.Name = "cboLugar";
+            this.cboLugar.Size = new System.Drawing.Size(165, 28);
+            this.cboLugar.TabIndex = 4;
             // 
-            // groupBox2
+            // cmdCerrar
             // 
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.comboBox5);
-            this.groupBox2.Controls.Add(this.comboBox6);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.Cantidad2);
-            this.groupBox2.Controls.Add(this.Alimento2);
-            this.groupBox2.Controls.Add(this.Lugar2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(22, 255);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(659, 186);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Almacenado";
+            this.cmdCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdCerrar.Location = new System.Drawing.Point(575, 569);
+            this.cmdCerrar.Name = "cmdCerrar";
+            this.cmdCerrar.Size = new System.Drawing.Size(75, 23);
+            this.cmdCerrar.TabIndex = 9;
+            this.cmdCerrar.Text = "Cerrar";
+            this.cmdCerrar.UseVisualStyleBackColor = true;
+            this.cmdCerrar.Click += new System.EventHandler(this.cmdCerrar_Click);
             // 
-            // comboBox5
+            // dtpFechaDeVencimiento
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(231, 93);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(165, 37);
-            this.comboBox5.TabIndex = 5;
+            this.dtpFechaDeVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaDeVencimiento.Location = new System.Drawing.Point(266, 65);
+            this.dtpFechaDeVencimiento.Name = "dtpFechaDeVencimiento";
+            this.dtpFechaDeVencimiento.Size = new System.Drawing.Size(244, 23);
+            this.dtpFechaDeVencimiento.TabIndex = 6;
             // 
-            // label6
+            // chkVencimiento
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(-37, -57);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(262, 31);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Control de alimentos";
+            this.chkVencimiento.AutoSize = true;
+            this.chkVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkVencimiento.Location = new System.Drawing.Point(88, 59);
+            this.chkVencimiento.Name = "chkVencimiento";
+            this.chkVencimiento.Size = new System.Drawing.Size(111, 29);
+            this.chkVencimiento.TabIndex = 8;
+            this.chkVencimiento.Text = "¿Vence?";
+            this.chkVencimiento.UseVisualStyleBackColor = true;
+            this.chkVencimiento.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // Cantidad2
+            // mrcmarco2
             // 
-            this.Cantidad2.AutoSize = true;
-            this.Cantidad2.Location = new System.Drawing.Point(426, 61);
-            this.Cantidad2.Name = "Cantidad2";
-            this.Cantidad2.Size = new System.Drawing.Size(109, 29);
-            this.Cantidad2.TabIndex = 2;
-            this.Cantidad2.Text = "Cantidad";
+            this.mrcmarco2.Controls.Add(this.dtpFechaDeVencimiento);
+            this.mrcmarco2.Controls.Add(this.chkVencimiento);
+            this.mrcmarco2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcmarco2.Location = new System.Drawing.Point(22, 318);
+            this.mrcmarco2.Name = "mrcmarco2";
+            this.mrcmarco2.Size = new System.Drawing.Size(659, 133);
+            this.mrcmarco2.TabIndex = 10;
+            this.mrcmarco2.TabStop = false;
+            this.mrcmarco2.Text = "Fecha de Vencimiento";
             // 
-            // Alimento2
+            // lstProductosIngresados
             // 
-            this.Alimento2.AutoSize = true;
-            this.Alimento2.Location = new System.Drawing.Point(226, 61);
-            this.Alimento2.Name = "Alimento2";
-            this.Alimento2.Size = new System.Drawing.Size(107, 29);
-            this.Alimento2.TabIndex = 1;
-            this.Alimento2.Text = "Alimento";
-            // 
-            // Lugar2
-            // 
-            this.Lugar2.AutoSize = true;
-            this.Lugar2.Location = new System.Drawing.Point(29, 61);
-            this.Lugar2.Name = "Lugar2";
-            this.Lugar2.Size = new System.Drawing.Size(74, 29);
-            this.Lugar2.TabIndex = 0;
-            this.Lugar2.Text = "Lugar";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(34, 93);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(165, 37);
-            this.comboBox6.TabIndex = 4;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(433, 96);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 29);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Cantidad";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(575, 459);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Cerrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lstProductosIngresados.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstProductosIngresados.FormattingEnabled = true;
+            this.lstProductosIngresados.ItemHeight = 25;
+            this.lstProductosIngresados.Location = new System.Drawing.Point(22, 483);
+            this.lstProductosIngresados.Name = "lstProductosIngresados";
+            this.lstProductosIngresados.Size = new System.Drawing.Size(659, 54);
+            this.lstProductosIngresados.TabIndex = 11;
+            this.lstProductosIngresados.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
             // Form2Alacena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 494);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(696, 604);
+            this.Controls.Add(this.lstProductosIngresados);
+            this.Controls.Add(this.mrcmarco2);
+            this.Controls.Add(this.cmdCerrar);
+            this.Controls.Add(this.mrcGuardar);
+            this.Controls.Add(this.lblControlDeAlimentos);
             this.Name = "Form2Alacena";
-            this.Text = "Form2";
+            this.Text = "Alacena";
             this.Load += new System.EventHandler(this.Form2Alacena_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.mrcGuardar.ResumeLayout(false);
+            this.mrcGuardar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCantidad)).EndInit();
+            this.mrcmarco2.ResumeLayout(false);
+            this.mrcmarco2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,25 +258,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label Lugar;
-        private System.Windows.Forms.Label Alimento;
-        private System.Windows.Forms.Label Cantidad;
-        private System.Windows.Forms.Button Guardar;
+        private System.Windows.Forms.Label lblControlDeAlimentos;
+        private System.Windows.Forms.Label lblLugar;
+        private System.Windows.Forms.Label lblProducto;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Button cmdGuardar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button Cancelar;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label Cantidad2;
-        private System.Windows.Forms.Label Alimento2;
-        private System.Windows.Forms.Label Lugar2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox mrcGuardar;
+        private System.Windows.Forms.ComboBox cboProductos;
+        private System.Windows.Forms.ComboBox cboLugar;
+        private System.Windows.Forms.Button cmdCancelar;
+        private System.Windows.Forms.Button cmdCerrar;
+        private System.Windows.Forms.CheckBox chkVencimiento;
+        private System.Windows.Forms.DateTimePicker dtpFechaDeVencimiento;
+        private System.Windows.Forms.GroupBox mrcmarco2;
+        private System.Windows.Forms.NumericUpDown nudCantidad;
+        private System.Windows.Forms.ListBox lstProductosIngresados;
     }
 }

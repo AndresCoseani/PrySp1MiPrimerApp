@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1Ingreso.cs">
+    <Compile Include="Form1GestionDeGastos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1Ingreso.Designer.cs">
-      <DependentUpon>Form1Ingreso.cs</DependentUpon>
+    <Compile Include="Form1GestionDeGastos.Designer.cs">
+      <DependentUpon>Form1GestionDeGastos.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2Alacena.cs">
       <SubType>Form</SubType>
@@ -59,13 +59,22 @@
     <Compile Include="Form2Alacena.Designer.cs">
       <DependentUpon>Form2Alacena.cs</DependentUpon>
     </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1Ingreso.resx">
-      <DependentUpon>Form1Ingreso.cs</DependentUpon>
+    <EmbeddedResource Include="Form1GestionDeGastos.resx">
+      <DependentUpon>Form1GestionDeGastos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2Alacena.resx">
       <DependentUpon>Form2Alacena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

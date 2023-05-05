@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PrySp1MiPrimerApp
 {
-    public partial class Form1Ingreso : Form
+    public partial class Form1GestionDeGastos : Form
     {
         //declaracion de variables
         decimal varAlquiler=0;
@@ -18,8 +18,9 @@ namespace PrySp1MiPrimerApp
         decimal varDeposito = 0;
         decimal varComida = 0;
         decimal varMonto = 0;
+        decimal varTotal;
 
-        public Form1Ingreso()
+        public Form1GestionDeGastos()
         {
             InitializeComponent();
         }
@@ -56,13 +57,16 @@ namespace PrySp1MiPrimerApp
             varComida = Convert.ToDecimal(txtComida.Text);
             varImpuesto = Convert.ToDecimal(txtImpuesto.Text);
             varDeposito= Convert.ToDecimal(txtDeposito.Text);
+            varMonto = Convert.ToDecimal(txtMonto.Text);
+           
 
-            varMonto = varDeposito - (varComida + varAlquiler + varImpuesto);
 
-            txtMonto.Text = varMonto.ToString();
+            varTotal = varDeposito - (varComida + varAlquiler + varImpuesto+ varMonto);
+
+            lblResultadoTotal.Text = varTotal.ToString();
 
             //concatenar-Unir texto
-            Total.Text = "\n Deposito" + varDeposito.ToString() + "\n Alquiler" + varAlquiler.ToString() + "\n Impuesto" + varImpuesto.ToString() + "\n Comida" + varComida.ToString() + "\n Monto" + varMonto.ToString();
+             //Total.Text = "\n Deposito" + varDeposito.ToString() + "\n Alquiler" + varAlquiler.ToString() + "\n Impuesto" + varImpuesto.ToString() + "\n Comida" + varComida.ToString() + "\n Monto" + varMonto.ToString();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

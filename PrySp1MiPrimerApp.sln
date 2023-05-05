@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrySp1MiPrimerApp", "PrySp1MiPrimerApp\PrySp1MiPrimerApp.csproj", "{056D67A7-76BB-4B3D-ABA5-DC2CD470FBA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PryCoseaniAndresMiPrimerApp", "PrySp1MiPrimerApp\PryCoseaniAndresMiPrimerApp.csproj", "{056D67A7-76BB-4B3D-ABA5-DC2CD470FBA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
